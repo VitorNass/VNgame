@@ -1,10 +1,9 @@
-    import pygame
+import pygame
+pygame.init()
+screen = pygame.display.set_mode(size=(600, 480))
 
-    pygame.init()
-    screen = pygame.display.set_mode(size=(600, 480))
-
-    while True:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit() #fechar janela
-                quit() #fechar pygame
+while True:
+  for event in pygame.event.get():
+   if event.type == pygame.QUIT:
+     pygame.quit() #fechar janela
+     quit() #fechar pygame
